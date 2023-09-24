@@ -1,6 +1,14 @@
 from typing_extensions import Self
 
 
+class XBOX_CONSTANTS:
+    MAX_AXIS_VALUE = 32767
+    MIN_AXIS_VALUE = -32768
+
+    L_STICK_X = 0
+    L_STICK_Y = 1
+
+
 class ButtonEvent:
     id: int
     value: bool
