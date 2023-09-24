@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linux-js"
+version = "0.0.1"
+authors = [
+  { name="Ethan Stacy", email="ethanstacy02@gmail.com" },
+]
+description = "A simple interface for Linux /dev/input/js devices"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Linux",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Ethanol5455/linux-js-py"
