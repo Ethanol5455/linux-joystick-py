@@ -3,9 +3,6 @@ from typing_extensions import Self
 
 class XBOX_CONSTANTS:
     """Tested using xpadneo"""
-    # Minimum and Maximum value for an axis
-    MAX_AXIS_VALUE = 32767
-    MIN_AXIS_VALUE = -32768
 
     ### Axis IDs:
     L_STICK_X_ID = 0
@@ -38,6 +35,9 @@ class ButtonEvent:
 
 
 class AxisEvent:
+    MAX_AXIS_VALUE = 32767
+    MIN_AXIS_VALUE = -32768
+
     id: int
     value: int
 
