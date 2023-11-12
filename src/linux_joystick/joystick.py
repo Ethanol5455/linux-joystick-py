@@ -2,11 +2,31 @@ from typing_extensions import Self
 
 
 class XBOX_CONSTANTS:
-    MAX_AXIS_VALUE = 32767
-    MIN_AXIS_VALUE = -32768
+    """Tested using xpadneo"""
 
-    L_STICK_X = 0
-    L_STICK_Y = 1
+    ### Axis IDs:
+    L_STICK_X_ID = 0
+    L_STICK_Y_ID = 1
+    LT_ID = 2
+    R_STICK_X_ID = 3
+    R_STICK_Y_ID = 4
+    RT_ID = 5
+    D_PAD_X_ID = 6
+    D_PAD_Y_ID = 7
+    TRIGGERS_COMBINED_ID = 8
+
+    ### Button IDs
+    A_BUTTON_ID = 0
+    B_BUTTON_ID = 1
+    X_BUTTON_ID = 2
+    Y_BUTTON_ID = 3
+    LB_BUTTON_ID = 4
+    RB_BUTTON_ID = 5
+    BACK_BUTTON_ID = 6
+    START_BUTTON_ID = 7
+    XBOX_BUTTON_ID = 8
+    LT_BUTTON_ID = 9
+    RT_BUTTON_ID = 10
 
 
 class ButtonEvent:
@@ -15,6 +35,9 @@ class ButtonEvent:
 
 
 class AxisEvent:
+    MAX_AXIS_VALUE = 32767
+    MIN_AXIS_VALUE = -32768
+
     id: int
     value: int
 

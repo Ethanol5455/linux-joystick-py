@@ -1,0 +1,22 @@
+name: Formatting Check
+
+on: [push]
+jobs:
+  fmt_check:
+    name: "Formatting Check"
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    
+    - name: Install deps
+      shell: bash
+      run: |
+        pip3 install ruff black isort
+      
+    - name: Check Formatting
+      shell: bash
+      run: |
+        make check_fmt
