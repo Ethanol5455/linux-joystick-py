@@ -1,4 +1,4 @@
-from linux_js import AxisEvent, ButtonEvent, Joystick
+from linux_joystick import AxisEvent, ButtonEvent, Joystick
 
 # Create joystick device (/dev/input/js0)
 js = Joystick(0)

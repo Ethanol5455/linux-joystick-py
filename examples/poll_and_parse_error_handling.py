@@ -1,6 +1,6 @@
 import time
 
-from linux_js import AxisEvent, ButtonEvent, Joystick
+from linux_joystick import AxisEvent, ButtonEvent, Joystick
 
 js = None
 while True:

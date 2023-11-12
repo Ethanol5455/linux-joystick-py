@@ -11,9 +11,9 @@ clean:
 
 fmt:
 #	Format src
-	python3 -m ruff src/linux_js --fix
-	python3 -m black src/linux_js --safe
-	python3 -m isort src/linux_js
+	python3 -m ruff src/linux_joystick --fix
+	python3 -m black src/linux_joystick --safe
+	python3 -m isort src/linux_joystick
 #	Format examples
 	python3 -m ruff examples --fix
 	python3 -m black examples --safe
