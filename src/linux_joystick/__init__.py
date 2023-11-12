@@ -1,4 +1,4 @@
-from .joystick import AxisEvent, ButtonEvent, Joystick, XBOX_CONSTANTS
+from .joystick import XBOX_CONSTANTS, AxisEvent, ButtonEvent, Joystick
 
 __all__ = ["Joystick", "ButtonEvent", "AxisEvent", "XBOX_CONSTANTS"]
 
