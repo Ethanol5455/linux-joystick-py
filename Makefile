@@ -18,3 +18,13 @@ fmt:
 	python3 -m ruff examples --fix
 	python3 -m black examples --safe
 	python3 -m isort examples
+
+check_fmt:
+#	Check src
+	python3 -m ruff src/linux_joystick
+	python3 -m black src/linux_joystick --check
+	python3 -m isort src/linux_joystick --check
+#	Check examples
+	python3 -m ruff examples
+	python3 -m black examples --check
+	python3 -m isort examples --check
