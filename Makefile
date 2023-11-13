@@ -1,7 +1,10 @@
 .PHONY: all check clean test fmt help
 
+build:
+	python3 -m build
+
 install:
-	pip3 install .
+	python3 -m pip3 install .
 
 clean:
 	rm -rf build
