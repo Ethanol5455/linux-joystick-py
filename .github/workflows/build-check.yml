@@ -1,9 +1,9 @@
-name: Formatting Check
+name: Build Check
 
 on: [push]
 jobs:
-  fmt_check:
-    name: "Formatting Check"
+  build_check:
+    name: "Build Check"
 
     runs-on: ubuntu-latest
 
@@ -14,9 +14,9 @@ jobs:
     - name: Install deps
       shell: bash
       run: |
-        pip3 install ruff black isort
+        pip3 install build
       
-    - name: Check Formatting
+    - name: Build
       shell: bash
       run: |
-        make check_fmt
+        python3 -m build
